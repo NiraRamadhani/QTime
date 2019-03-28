@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ActivityGetQueue">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:backgroundTint="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#000"
+            android:drawableStart="@drawable/ic_hourglass"
+            android:drawablePadding="6dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:paddingTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/doctor_detail_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_doctor"
+            android:padding="6dp"
+            android:background="@drawable/back"/>
+
+        <LinearLayout
+            android:background="@drawable/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor:"
+                android:fontFamily="@font/bahnschrift"
+                android:textColor="@color/queue_text"/>
+
+            <TextView
+                android:id="@+id/doctor_detail_name"
+                android:textColor="#000"
+                android:paddingLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:text="Name"/>
+
+            <TextView
+                android:id="@+id/current_queue"
+                android:paddingLeft="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bahnschrift"
+                android:textColor="@color/queue_text"
+                android:text="Current queue"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/bahnschrift"
+            android:gravity="center"
+            android:text="Check Location" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/queue_now"
+            android:layout_width="187dp"
+            android:layout_height="164dp"
+            android:backgroundTint="@color/white"
+            android:drawableTop="@drawable/ic_checked"
+            android:text="QUEUE NOW!"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

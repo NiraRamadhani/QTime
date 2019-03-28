@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "402183317553",
+    "firebase_url": "https://qtime-8f333.firebaseio.com",
+    "project_id": "qtime-8f333",
+    "storage_bucket": "qtime-8f333.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402183317553:android:4a5633b44d222bbc",
+        "android_client_info": {
+          "package_name": "com.hmm.q_time"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402183317553-q6h30njot0giuejdlbq7cpkdf1iv27v1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACzIh6WKKWpmLy7E7IXYMh8TH3V3R-iD8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
